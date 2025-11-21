@@ -4,7 +4,7 @@ export interface Item {
   id: string;
   title: string;
   subtitle?: string;
-  image: any;
+  image: string;
   isFavorite: boolean;
   category: Category;
   type: 'verleihen' | 'verschenken';

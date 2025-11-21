@@ -213,7 +213,13 @@ export default function AddItemScreen() {
     <View style={styles.container}>
       {/* Header */}
       <View style={styles.header}>
-        <TouchableOpacity onPress={() => step > 1 ? setStep((step - 1) as Step) : null}>
+        <TouchableOpacity 
+          onPress={() => {
+            if (step > 1) {
+              setStep((step - 1) as Step);
+            }
+          }}
+          disabled={step === 1}>
           <Text style={styles.backButton}>←</Text>
         </TouchableOpacity>
         <View>

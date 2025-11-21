@@ -52,7 +52,7 @@ const mockItems: Item[] = [
     subtitle: 'Sofa Set',
     image: '🛋️',
     isFavorite: true,
-    category: 'Bücher',
+    category: 'Elektronik',
     type: 'verleihen',
   },
 ];

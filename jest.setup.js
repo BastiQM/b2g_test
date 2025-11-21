@@ -1,6 +1,9 @@
+/* eslint-env jest */
 // Mock react-native-gesture-handler
+// eslint-disable-next-line no-undef
 jest.mock('react-native-gesture-handler', () => {
-  const View = require('react-native/Libraries/Components/View/View');
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
+  const View = require('react-native').View;
   return {
     Swipeable: View,
     DrawerLayout: View,
@@ -26,6 +29,7 @@ jest.mock('react-native-gesture-handler', () => {
     RectButton: View,
     BorderlessButton: View,
     FlatList: View,
+    // eslint-disable-next-line no-undef
     gestureHandlerRootHOC: jest.fn(),
     Directions: {},
   };
